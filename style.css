@@ -29,11 +29,12 @@ body {
     margin: 0 0.5rem;
     color: #f0e6e6;
     font-size: 1.6rem;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
   }
   .social-links a:hover { 
-    transform: scale(1.3);
+    transform: rotate(-10deg) scale(1.3);
     color: #FFD700; 
+    text-shadow: 0 0 5px #FFD700;
   }
   
   /* Container & Sections */
@@ -52,59 +53,8 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
   
-  /* Section Headers with Icons */
+  /* Section Headers */
   h2 {
     color: #FFD700;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 0.3rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  h2 i { color: #FFD700; }
-  
-  /* Subheaders */
-  h3 { color: #f0e6e6; margin-bottom: 0.3rem; }
-  
-  /* Lists */
-  ul { list-style: none; padding-left: 0; }
-  ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-  }
-  ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-    font-weight: bold;
-  }
-  
-  /* Skills & Tools */
-  .skills, .tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
-  .skills span, .tools span {
-    background: #7A0C0C;
-    color: #f0e6e6;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    transition: transform 0.3s, background 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-  .skills span:hover, .tools span:hover {
-    transform: scale(1.2);
-    background: #A00E0E;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #f0e6e6;
-    border-top: 1px solid #FFD700;
-  }
+    margin-bottom
   
