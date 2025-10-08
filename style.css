@@ -1,158 +1,226 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
+/* Base */
+body {
     font-family: 'Roboto', sans-serif;
-    background-color: #4a0000; /* Oxblood overall background */
-    display: flex;
-    color: white;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    background-color: #000;
-    width: 200px;
-    min-height: 100vh;
+    background: #4A0404; /* Oxblood page background */
+    color: #fff;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
     position: fixed;
     left: 0;
     top: 0;
+    width: 220px;
+    height: 100%;
+    background: #000; /* Keep sidebar black */
     padding-top: 2rem;
-  }
-  
-  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar ul {
     list-style: none;
-  }
-  
-  .sidebar ul li {
-    margin: 1rem 0;
-  }
-  
-  .sidebar ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 0.8rem 0;
+}
+
+.sidebar ul li a {
     color: gold;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0.5rem 1rem;
     display: block;
-    transition: background 0.3s;
-  }
-  
-  .sidebar ul li a:hover {
-    background-color: gold;
-    color: black;
-  }
-  
-  /* Main Content Area */
-  .main-content {
-    margin-left: 200px;
-    padding: 2rem;
-    max-width: 1000px;
-    margin-right: auto;
-    background-color: #4a0000; /* Oxblood background */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  }
-  
-  /* Header */
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  header .name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: black; /* Name in black */
-    background-color: gold;
-    display: inline-block;
-    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #FFD70010;
+    color: #FFD700;
     border-radius: 8px;
-  }
-  
-  header p {
-    margin: 0.3rem 0;
-  }
-  
-  .social-links {
-    margin-top: 0.5rem;
-  }
-  
-  .social-links a {
-    color: gold;
-    margin: 0 8px;
-    font-size: 1.3rem;
-    transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
-    color: white;
-  }
-  
-  /* Sections */
-  section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  
-  section h2 {
-    color: black; /* Black headers inside oxblood */
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-    background-color: gold;
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    border-radius: 5px;
-  }
-  
-  section ul {
-    margin-left: 1.5rem;
-    list-style-type: disc;
-  }
-  
-  .skills span, .tools span {
-    display: inline-block;
-    background: gold;
-    color: black;
-    padding: 0.3rem 0.7rem;
-    margin: 0.3rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Header */
+.header-section {
+    margin-left: 220px; /* leave space for sidebar */
+    padding: 3rem 2rem 2rem;
+    background: linear-gradient(135deg, #7A0C0C, #A00E0E);
+    color: black; /* Name & contact info in black */
     text-align: center;
-    padding: 1rem 0;
-    border-top: 1px solid gold;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.header-section h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-section .contact-info {
+    font-weight: bold;
+    margin: 0.3rem 0;
+    line-height: 1.5;
+}
+
+.header-section .social-links a {
+    margin: 0 0.5rem;
+    color: black;
+    font-size: 1.6rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.header-section .social-links a:hover { 
+    transform: scale(1.3);
+    color: #FFD700; 
+}
+
+/* Main content */
+.content-container {
+    margin-left: 240px; /* space for sidebar */
+    padding: 2rem;
+    max-width: 900px;
+}
+
+.content-container section {
+    background: #5C0000; /* oxblood card */
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+}
+
+.content-container section h2 {
+    color: black; /* section headers black */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid gold;
+    padding-bottom: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content-container section h2 i {
     color: gold;
-    margin-top: 2rem;
-  }
-  
-  /* Back to top */
-  #backToTop {
+}
+
+.content-container section h3 {
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.content-container section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-container section ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.content-container section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: gold;
+    font-weight: bold;
+}
+
+/* Skills & Tools pills */
+.skills, .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skills span, .tools span {
+    background: #7A0C0C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.skills span:hover, .tools span:hover {
+    transform: scale(1.2);
+    background: #A00E0E;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+    border-top: 1px solid gold;
+    margin-left: 240px;
+}
+
+/* Back to top button */
+#backToTop {
+    display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
     background: gold;
     color: black;
     border: none;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 18px;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
     cursor: pointer;
-    display: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-  
-  #backToTop:hover {
-    background: white;
-  }
-  
-  
+}
 
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content-container, footer {
+        margin-left: 200px;
+    }
+}
 
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar ul li {
+        margin: 0.5rem;
+    }
+    .content-container, footer, .header-section {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h1 {
+        font-size: 2rem;
+    }
+    .skills span, .tools span {
+        font-size: 0.8rem;
+    }
+}
