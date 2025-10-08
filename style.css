@@ -1,24 +1,25 @@
-/* Base & Body */
+/* === Global Styles === */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #4A0404; /* Oxblood background */
-    color: #f0e6e6;
-    scroll-behavior: smooth;
+    background-color: #4A0E0E; /* ✅ Oxblood */
+    color: #000000;
+    display: flex;
   }
   
-  /* Sidebar (black background retained) */
-.sidebar {
+  /* === Sidebar === */
+  .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 180px;
-    background: #000000; /* 🔥 Black sidebar restored */
+    width: 200px;
+    background-color: #000000; /* ✅ Black sidebar */
     padding-top: 2rem;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
   }
+  
   .sidebar .nav-links {
     list-style: none;
     padding: 0;
@@ -26,165 +27,126 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start;
     padding-left: 1rem;
   }
+  
   .sidebar .nav-links li a {
+    color: #FFD700; /* Gold */
     text-decoration: none;
-    color: #FFD700;
     font-weight: 600;
     display: block;
-    width: 100%;
     padding: 0.4rem 0;
     transition: background 0.3s, padding-left 0.3s;
   }
+  
   .sidebar .nav-links li a:hover {
     background: rgba(255, 215, 0, 0.1);
     padding-left: 0.5rem;
   }
+  
   .sidebar .nav-links li a.active {
     background: #FFD700;
-    color: #000000; /* match sidebar black */
+    color: #000000;
   }
   
-  /* Main content area with “card” effect */
-  .main-content {
-    margin-left: 180px; /* to avoid being under sidebar */
-    padding: 2rem;
-  }
+  /* === Main Content === */
   .container {
-    background: #5C0000; /* slightly lighter oxblood for container */
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    margin-left: 220px; /* space for sidebar */
     padding: 2rem;
+    width: calc(100% - 220px);
   }
   
-  /* Header */
   header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
   }
+  
   header h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.8rem;
-    color: #FFD700;
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
   }
+  
   header p {
-    color: #f0e6e6;
-    font-size: 1.1rem;
+    margin: 0.2rem 0;
   }
-  .social-links a {
-    margin: 0 0.5rem;
-    color: #f0e6e6;
-    font-size: 1.6rem;
-    transition: transform 0.3s, color 0.3s;
-  }
-  .social-links a:hover {
-    transform: scale(1.3);
+  
+  header .social-links a {
     color: #FFD700;
-  }
-  
-  /* Sections */
-  section {
-    margin-bottom: 2.5rem;
-  }
-  section h2 {
-    color: #FFD700;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 0.3rem;
-  }
-  h3 {
-    color: #f0e6e6;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Lists */
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  ul li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-  }
-  ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-  }
-  
-  /* Skills & Tools */
-  .skills, .tools {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .skills span, .tools span {
-    background: #7A0C0C;
-    color: #f0e6e6;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    transition: transform 0.3s, background 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-  .skills span:hover, .tools span:hover {
-    transform: scale(1.2);
-    background: #A00E0E;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1.5rem;
-    color: #f0e6e6;
-  }
-  
-  /* Back-to-top button */
-  #backToTop {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #FFD700;
-    color: #4A0404;
-    border: none;
-    padding: 0.7rem 0.9rem;
-    border-radius: 50%;
-    cursor: pointer;
     font-size: 1.2rem;
-    display: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 0 0.5rem;
     transition: transform 0.3s;
   }
-  #backToTop:hover {
-    transform: translateY(-5px);
+  
+  header .social-links a:hover {
+    transform: scale(1.2);
   }
   
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-    .sidebar {
-      position: relative;
-      width: 100%;
-      height: auto;
-      box-shadow: none;
-    }
-    .main-content {
-      margin-left: 0;
-      padding: 1rem;
-    }
-    .container {
-      padding: 1rem;
-    }
-    .sidebar .nav-links {
-      flex-direction: row;
-      justify-content: center;
-      gap: 1rem;
-    }
+  /* === Sections === */
+  section {
+    background: #FFFFFF; /* White card */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* ✨ Card shadow */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    color: #FFD700; /* Gold section titles */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  section h2 i {
+    color: #FFD700;
+  }
+  
+  section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .skills span, .tools span {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000;
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    margin: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: transparent;
+    color: #FFD700;
+    font-weight: 600;
+  }
+  
+  /* === Back to Top Button === */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFD700;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    transition: background 0.3s;
+  }
+  
+  #backToTop:hover {
+    background: #e6c200;
   }
   
 
