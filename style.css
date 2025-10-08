@@ -5,10 +5,10 @@ body {
     color: #f0e6e6;
     line-height: 1.6;
     margin: 0;
-  }
-  
-  /* Sidebar */
-  .sidebar {
+}
+
+/* Sidebar */
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,106 +16,112 @@ body {
     height: 100%;
     background-color: #000; /* black sidebar */
     padding-top: 2rem;
-  }
-  .sidebar ul {
+}
+.sidebar ul {
     list-style: none;
     padding-left: 0;
-  }
-  .sidebar ul li {
+}
+.sidebar ul li {
     margin-bottom: 1.2rem;
-  }
-  .sidebar ul li a {
+}
+.sidebar ul li a {
     color: #FFD700; /* gold */
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 0.5rem 1rem;
-  }
-  .sidebar ul li a:hover {
+}
+.sidebar ul li a:hover {
     background: #222;
     border-radius: 10px;
-  }
-  
-  /* Header */
-  .header-section {
+}
+
+/* Header */
+.header-section {
     margin-left: 240px;
     padding: 2rem;
     background: linear-gradient(135deg, #7A0C0C, #A00E0E);
     color: #000; /* name and top info black */
     text-align: center;
-  }
-  .header-section h1 {
+}
+.header-section h1 {
     font-family: 'Pacifico', cursive;
     font-size: 2.8rem;
     margin-bottom: 0.3rem;
-  }
-  .header-section p.contact-info strong {
+}
+.header-section p.contact-info strong {
     font-weight: bold;
-  }
-  .header-section .social-links a {
+}
+.header-section .social-links a {
     margin: 0 0.5rem;
     color: #FFD700;
     font-size: 1.6rem;
     transition: transform 0.3s, color 0.3s;
-  }
-  .header-section .social-links a:hover {
+}
+.header-section .social-links a:hover {
     transform: scale(1.3);
     color: #fff;
-  }
-  
-  /* Main Content */
-  .content-container {
-    margin-left: 240px; /* sidebar width */
+}
+
+/* Main Content */
+.content-container {
+    margin-left: 240px;
     padding: 2rem;
     width: calc(100% - 240px);
     box-sizing: border-box;
-  }
-  .content-container section {
+}
+
+/* CV Cards */
+.cv-card {
     background: #4A0404; /* oxblood */
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  .content-container section h2 {
+    width: 100%; /* full width */
+    min-height: 200px; /* adjust so cards aren’t too short */
+}
+
+/* Section Headers */
+.cv-card h2 {
     color: #000; /* headers black */
     border-bottom: 2px solid #FFD700;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
-  }
-  .content-container section h3 {
+}
+.cv-card h3 {
     color: #f0e6e6;
     margin-top: 1rem;
-  }
-  .content-container section p,
-  .content-container section ul {
+}
+.cv-card p,
+.cv-card ul {
     margin: 0.5rem 0;
-  }
-  .content-container section ul li {
+}
+.cv-card ul li {
     margin-bottom: 0.5rem;
-  }
-  
-  /* Skills and Tools */
-  .skills span, .tools span {
+}
+
+/* Skills and Tools */
+.skills span, .tools span {
     display: inline-block;
     background: #000;
     color: #FFD700;
     padding: 0.3rem 0.6rem;
     margin: 0.2rem;
     border-radius: 5px;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     margin-left: 240px;
     padding: 1rem;
     text-align: center;
     background: #333;
     color: #FFD700;
-  }
-  
-  /* Back to top button */
-  #backToTop {
+}
+
+/* Back to top button */
+#backToTop {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -127,27 +133,27 @@ body {
     cursor: pointer;
     font-size: 1.2rem;
     color: #000;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 992px) {
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
     .sidebar {
-      width: 200px;
+        width: 200px;
     }
     .content-container {
-      margin-left: 200px;
-      width: calc(100% - 200px);
+        margin-left: 200px;
+        width: calc(100% - 200px);
     }
-  }
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
     .sidebar {
-      position: relative;
-      width: 100%;
-      height: auto;
+        position: relative;
+        width: 100%;
+        height: auto;
     }
     .content-container {
-      margin-left: 0;
-      width: 100%;
-      padding: 1rem;
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
     }
-  }
+}
