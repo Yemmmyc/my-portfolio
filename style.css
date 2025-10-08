@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #4A0E0E; /* ✅ Oxblood */
+    background-color: #4A0E0E; /* ✅ Oxblood main background */
     color: #000000;
     display: flex;
   }
@@ -14,7 +14,7 @@ body {
     left: 0;
     height: 100%;
     width: 200px;
-    background-color: #000000; /* ✅ Black sidebar */
+    background-color: #000000; /* ✅ Black sidebar restored */
     padding-top: 2rem;
     box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
@@ -59,17 +59,19 @@ body {
   header {
     text-align: center;
     margin-bottom: 2rem;
-    color: #000000;
+    color: #000000; /* ✅ Ensures text in header is black */
   }
   
   header h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    color: #000000; /* ✅ Name in black */
   }
   
   header p {
     margin: 0.2rem 0;
+    color: #000000;
   }
   
   header .social-links a {
