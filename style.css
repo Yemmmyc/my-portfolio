@@ -7,14 +7,14 @@ body {
     scroll-behavior: smooth;
   }
   
-  /* Sidebar (unchanged appearance) */
-  .sidebar {
+  /* Sidebar (black background retained) */
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 180px;
-    background: #4A0404;
+    background: #000000; /* 🔥 Black sidebar restored */
     padding-top: 2rem;
     box-shadow: 2px 0 10px rgba(0,0,0,0.4);
     z-index: 1000;
@@ -31,7 +31,7 @@ body {
   }
   .sidebar .nav-links li a {
     text-decoration: none;
-    color: #FFD700; /* gold links */
+    color: #FFD700;
     font-weight: 600;
     display: block;
     width: 100%;
@@ -44,7 +44,7 @@ body {
   }
   .sidebar .nav-links li a.active {
     background: #FFD700;
-    color: #4A0404;
+    color: #000000; /* match sidebar black */
   }
   
   /* Main content area with “card” effect */
