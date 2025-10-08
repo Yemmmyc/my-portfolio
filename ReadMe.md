@@ -39,18 +39,17 @@ The site is built with **HTML5** and **CSS3**, hosted on **GitHub Pages**.
 The site is deployed directly from the `main` branch using **GitHub Pages**.
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/Yemmmyc/my-portfolio.git
 cd my-portfolio
 2. Make Changes Locally
 Edit the index.html and style.css files as needed.
 
 3. Push Changes
-bash
-Copy code
 git add .
 git commit -m "Update site content or styling"
 git push origin main
+
 4. View Live Site
 Visit: https://yemmmyc.github.io/my-portfolio
 
