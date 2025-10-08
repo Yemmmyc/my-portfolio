@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Animate skills/tools hover
@@ -33,7 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const socialIcons = document.querySelectorAll('.social-links a');
     socialIcons.forEach(icon => {
       icon.addEventListener('mouseenter', () => icon.style.transform = 'rotate(-10deg) scale(1.3)');
-      icon.addEventListener('mouseleave', () => icon.style.transform = 'rotate(0deg) scale(1)');
-    });
-  });
-  
+      icon.addEventListener('mouseleave', () => icon.style.transform
