@@ -1,109 +1,134 @@
-/* Sidebar */
-.sidebar {
+/* Base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #4A0404; /* Oxblood overall page background */
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Sidebar Navigation */
+  .sidebar {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 240px;
     height: 100%;
-    background-color: #000000; /* keep black */
-    padding-top: 50px;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    background: #000; /* Black sidebar */
+    padding-top: 2rem;
   }
-  
   .sidebar ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    padding-left: 0;
   }
-  
   .sidebar ul li {
-    margin: 20px 0;
+    margin: 1rem 0;
   }
-  
   .sidebar ul li a {
-    color: #FFD700; /* gold tabs */
+    color: #FFD700; /* Gold links */
     text-decoration: none;
     font-weight: bold;
     display: block;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     transition: background 0.3s;
   }
-  
   .sidebar ul li a:hover {
-    background-color: rgba(255,215,0,0.2);
-    border-radius: 8px;
+    background: #222;
+    border-radius: 5px;
   }
   
   /* Header */
   .header-section {
-    background: linear-gradient(135deg, #7A0C0C, #A00E0E); /* oxblood header */
-    color: #000000; /* name and top text black */
-    text-align: center;
-    padding: 3rem 1rem 2rem;
+    margin-left: 240px; /* leave space for sidebar */
+    padding: 2rem 2rem 1rem;
+    background: linear-gradient(135deg, #7A0C0C, #A00E0E);
+    color: black; /* Name and top info black */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
-  
   .header-section h1 {
     font-family: 'Pacifico', cursive;
     font-size: 2.8rem;
+    margin-bottom: 0.3rem;
   }
-  
-  .header-section .contact-info strong {
+  .header-section .contact-info {
     font-weight: bold;
   }
-  
+  .social-links {
+    margin-top: 1rem;
+  }
   .social-links a {
     margin: 0 0.5rem;
-    color: #FFD700; /* keep gold */
+    color: #FFD700;
     font-size: 1.6rem;
     transition: transform 0.3s, color 0.3s;
   }
-  
-  .social-links a:hover {
+  .social-links a:hover { 
     transform: scale(1.3);
-    color: #fffacd;
+    color: #fff; 
   }
   
-  /* Main CV content */
+  /* Main Content */
   .content-container {
-    background-color: #800020; /* oxblood background */
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    padding: 40px 60px; /* more padding for breathing space */
-    margin: 20px;
-    color: #ffffff; /* text color */
-    width: calc(100% - 260px); /* full width minus sidebar */
-    max-width: none;
-    float: right;
-    box-sizing: border-box;
+    margin-left: 240px; /* same as sidebar width */
+    padding: 2rem;
   }
-  
-  /* Sections inside content */
   .content-container section {
-    margin-bottom: 50px;
+    background: #5C0000; /* Oxblood content card */
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    width: calc(100% - 40px); /* extend card to cover page width minus padding */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  .content-container section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
   
-  .content-container h2 {
-    color: #000000; /* black headers inside CV */
-    margin-bottom: 20px;
-  }
-  
-  /* Skills & Tools pills */
-  .skills, .tools {
-    display: flex;
-    flex-wrap: wrap;
+  /* Section Headers with Icons */
+  h2 {
+    color: black; /* headers inside content are black */
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
     gap: 0.5rem;
-    margin-top: 0.5rem;
+  }
+  h2 i { color: black; }
+  
+  /* Subheaders */
+  h3 { color: #fff; margin-bottom: 0.3rem; }
+  h3 small { font-weight: normal; color: #f0e6e6; }
+  
+  /* Lists */
+  ul { list-style: none; padding-left: 0; }
+  ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+    font-weight: bold;
   }
   
+  /* Skills & Tools */
+  .skills, .tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
   .skills span, .tools span {
     background: #7A0C0C;
-    color: #f0e6e6;
+    color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
     transition: transform 0.3s, background 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
-  
   .skills span:hover, .tools span:hover {
     transform: scale(1.2);
     background: #A00E0E;
@@ -112,53 +137,44 @@
   
   /* Footer */
   footer {
+    margin-left: 240px;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    color: #f0e6e6;
+    color: #fff;
     border-top: 1px solid #FFD700;
   }
   
   /* Back to top button */
   #backToTop {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     display: none;
-    background-color: #FFD700;
+    background: #FFD700;
+    color: #000;
     border: none;
-    padding: 10px 15px;
     border-radius: 50%;
+    padding: 0.8rem;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    font-size: 18px;
-    z-index: 100;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
   
-  #backToTop:hover {
-    background-color: #ffc107;
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    .header-section, .content-container, footer {
+      margin-left: 200px;
+    }
+    .sidebar { width: 200px; }
+    .content-container section { width: calc(100% - 40px); }
   }
-  
-  /* Responsive adjustments */
-  @media screen and (max-width: 1024px) {
-    .content-container {
-      width: calc(100% - 240px);
-      padding: 30px 40px;
+  @media (max-width: 768px) {
+    .header-section, .content-container, footer {
+      margin-left: 0;
+      padding: 1rem;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-      padding-top: 20px;
-    }
-  
-    .content-container {
-      width: 100%;
-      float: none;
-      margin: 20px 0;
-      padding: 30px 20px;
-    }
+    .sidebar { position: relative; width: 100%; height: auto; padding-top: 1rem; }
+    .sidebar ul li a { display: inline-block; margin-right: 0.5rem; }
+    .content-container section { width: 100%; }
   }
