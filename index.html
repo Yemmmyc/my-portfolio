@@ -1,288 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oluwayemisi Olabanji Okunrounmu - CV</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    /* Reset & layout */
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      min-height: 100vh;
-      scroll-behavior: smooth;
-    }
-
-    /* Vertical Navigation */
-    nav {
-      width: 220px;
-      background-color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-    }
-
-    nav .nav-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-
-    nav .nav-links li {
-      width: 100%;
-    }
-
-    nav .nav-links li a {
-      display: block;
-      padding: 12px 20px;
-      text-decoration: none;
-      color: gold;
-      font-weight: 600;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    nav .nav-links li a:hover {
-      background-color: rgba(255, 215, 0, 0.2);
-    }
-
-    nav .nav-links li a.active {
-      background-color: gold;
-      color: #000;
-    }
-
-    /* Content area */
-    .main-content {
-      margin-left: 220px;
-      padding: 20px;
-      flex: 1;
-    }
-
-    header {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    header h1 {
-      font-family: 'Pacifico', cursive;
-      margin-bottom: 5px;
-    }
-
-    .social-links a {
-      margin: 0 8px;
-      color: #333;
-      font-size: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section {
-      padding-top: 60px;
-      margin-top: -60px; /* offset for nav highlight */
-    }
-
-    section h2 {
-      color: #444;
-      border-bottom: 2px solid gold;
-      padding-bottom: 5px;
-    }
-
-    .skills span, .tools span {
-      display: inline-block;
-      background-color: #f8f8f8;
-      margin: 5px;
-      padding: 6px 10px;
-      border-radius: 4px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      background-color: #f0f0f0;
-    }
-
-    /* Back to top button */
-    #backToTop {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: gold;
-      color: #000;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    #backToTop:hover {
-      background-color: #d4af37;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        position: relative;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .main-content {
-        margin-left: 0;
-      }
-      nav .nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-      }
-      nav .nav-links li a {
-        text-align: center;
-        padding: 10px;
-      }
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Vertical Navigation -->
-<nav>
-  <ul class="nav-links">
-    <li><a href="#top" class="active">Home</a></li>
-    <li><a href="#objective">Objective</a></li>
-    <li><a href="#highlights">Highlights</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#tools">Tools</a></li>
-    <li><a href="#references">References</a></li>
-  </ul>
-</nav>
+  <!-- Sidebar Navigation (unchanged) -->
+  <nav class="sidebar">
+    <ul class="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+  </nav>
 
-<!-- Main Content -->
-<div class="main-content">
-  <header id="top">
-    <h1>Oluwayemisi Olabanji Okunrounmu</h1>
-    <p>📞 08034737155 | 📧 yemmmyc@hotmail.com</p>
-    <p>🏠 6 Adesina Street, Zansi Estate, Off Iwaya Rd, Onike, Sabo Yaba, Lagos State</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://yourportfolio.com" target="_blank"><i class="fas fa-globe"></i></a>
+  <div class="main-content">
+    <header id="top">
+      <h1>Oluwayemisi Olabanji Okunrounmu</h1>
+      <p>📞 08034737155 | 📧 yemmmyc@hotmail.com</p>
+      <p>🏠 6 Adesina Street, Zansi Estate, Off Iwaya Rd, Onike, Sabo Yaba, Lagos State</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://yourportfolio.com" target="_blank"><i class="fas fa-globe"></i></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="objective">
+        <h2><i class="fas fa-bullseye"></i> Objective</h2>
+        <p>Seasoned IT professional with over 15 years of experience in banking and enterprise IT environments. Proven leader in infrastructure support, cybersecurity, and team development. Adept at aligning technology with business strategy and delivering scalable, secure solutions. Seeking opportunities to leverage strategic vision, operational excellence, and industry expertise to drive innovation and business growth.</p>
+      </section>
+
+      <section id="highlights">
+        <h2><i class="fas fa-lightbulb"></i> Technology Leadership Highlights</h2>
+        <ul>
+          <li>Directed technology operations and infrastructure supporting over 60 branches in the financial sector.</li>
+          <li>Introduced ITIL-based processes, reducing incident response time and increasing team efficiency.</li>
+          <li>Oversaw regional IT project execution, vendor coordination, and internal training programs.</li>
+          <li>Maintained strong compliance posture and cybersecurity readiness through audits and certifications.</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+
+        <h3>Access Bank Plc, Victoria Island, Lagos</h3>
+        <strong>Assistant Manager, Enterprise Platform Support (Unix/AIX)/Datacenter Management</strong>
+        <em>June 2022 – Jan 2024</em>
+        <ul>
+          <li>Led enterprise platform operations, ensuring uptime and resilience for core banking applications.</li>
+          <li>Managed infrastructure upgrades, security patching, and datacenter operations.</li>
+          <li>Aligned platform performance metrics with business KPIs.</li>
+          <li>Mentored junior engineers and fostered a proactive, collaborative team culture.</li>
+        </ul>
+
+        <h3>Access Bank Plc IT Regional Office, Gbagada</h3>
+        <strong>Senior Banking Officer, Regional IT Support Team Lead</strong>
+        <em>Feb 2012 – June 2022</em>
+        <ul>
+          <li>Directed a team of 25 supporting over 60 branches across Lagos.</li>
+          <li>Coordinated end-to-end IT services from connectivity to ATM support and server management.</li>
+          <li>Standardized operational processes and improved response times using ITIL best practices.</li>
+          <li>Managed vendor SLAs and security compliance across locations.</li>
+        </ul>
+
+        <h3>Intercontinental Bank Plc, Ikeja & Akure Branches</h3>
+        <strong>Banking & IT Support Officer</strong>
+        <em>2004 – 2012</em>
+        <ul>
+          <li>Delivered full-scope IT support, infrastructure optimization, and user training.</li>
+          <li>Supported rollout of branch technology and ongoing upgrades.</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>
+        <ul>
+          <li>M.Sc. Information Technology, University of Lagos – 2018</li>
+          <li>B.Sc. Electrical & Electronics Engineering, University of Lagos – 2001</li>
+          <li>ITIL Foundation – 2014</li>
+          <li>Oracle Cloud Infrastructure Foundation – 2023</li>
+          <li>ISC2 Cybersecurity Certified – 2024</li>
+          <li>Google Cloud Associate Cloud Engineer – 2025</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2><i class="fas fa-cogs"></i> Core Competencies & Skills</h2>
+        <div class="skills">
+          <span>Technology Strategy</span>
+          <span>Infrastructure Architecture</span>
+          <span>Software & Systems Oversight</span>
+          <span>Team Leadership</span>
+          <span>Financial IT Operations</span>
+          <span>ITIL Implementation</span>
+          <span>Vendor Management</span>
+          <span>Automation</span>
+          <span>DevOps Tools</span>
+        </div>
+      </section>
+
+      <section id="tools">
+        <h2><i class="fas fa-tools"></i> Tools & Technologies</h2>
+        <div class="tools">
+          <span>IBM Power Systems</span>
+          <span>Unix/AIX/Linux</span>
+          <span>Windows Servers</span>
+          <span>Jenkins</span>
+          <span>GitHub</span>
+          <span>Kubernetes</span>
+        </div>
+      </section>
+
+      <section id="references">
+        <h2><i class="fas fa-users"></i> References</h2>
+        <p>Available upon request</p>
+      </section>
     </div>
-  </header>
 
-  <div class="container">
-    <section id="objective">
-      <h2><i class="fas fa-bullseye"></i> Objective</h2>
-      <p>Seasoned IT professional with over 15 years of experience in banking and enterprise IT environments. Proven leader in infrastructure support, cybersecurity, and team development...</p>
-    </section>
-
-    <section id="highlights">
-      <h2><i class="fas fa-lightbulb"></i> Technology Leadership Highlights</h2>
-      <ul>
-        <li>Directed technology operations and infrastructure supporting over 60 branches in the financial sector.</li>
-        <li>Introduced ITIL-based processes, reducing incident response time and increasing team efficiency.</li>
-        <li>Oversaw regional IT project execution, vendor coordination, and internal training programs.</li>
-        <li>Maintained strong compliance posture and cybersecurity readiness through audits and certifications.</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-      <!-- Experience content -->
-    </section>
-
-    <section id="education">
-      <h2><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>
-      <!-- Education content -->
-    </section>
-
-    <section id="skills">
-      <h2><i class="fas fa-cogs"></i> Core Competencies & Skills</h2>
-      <div class="skills">
-        <span>Technology Strategy</span>
-        <span>Infrastructure Architecture</span>
-        <span>Software & Systems Oversight</span>
-        <span>Team Leadership</span>
-        <span>ITIL Implementation</span>
-        <span>Vendor Management</span>
-        <span>DevOps Tools</span>
-      </div>
-    </section>
-
-    <section id="tools">
-      <h2><i class="fas fa-tools"></i> Tools & Technologies</h2>
-      <div class="tools">
-        <span>IBM Power Systems</span>
-        <span>Unix/AIX/Linux</span>
-        <span>Windows Servers</span>
-        <span>Jenkins</span>
-        <span>GitHub</span>
-        <span>Kubernetes</span>
-      </div>
-    </section>
-
-    <section id="references">
-      <h2><i class="fas fa-users"></i> References</h2>
-      <p>Available upon request</p>
-    </section>
+    <footer>
+      &copy; 2025 Oluwayemisi Olabanji Okunrounmu
+    </footer>
   </div>
 
-  <footer>
-    &copy; 2025 Oluwayemisi Olabanji Okunrounmu (yemmmyc@hotmail.com)
-  </footer>
-</div>
+  <!-- Back to top button -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
 
-<!-- Back to top button -->
-<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
-
-<script>
-  // Back to top
-  const btn = document.getElementById('backToTop');
-  window.addEventListener('scroll', () => {
-    btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
-  });
-  btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  // Scroll spy
-  const sections = document.querySelectorAll('section, header');
-  const navLinks = document.querySelectorAll('.nav-links a');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 70;
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute('id');
-      }
+  <script>
+    // Show/Hide back to top
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      btn.style.display = (window.scrollY > 300) ? 'block' : 'none';
     });
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
-      }
+    // Scroll spy logic
+    const sections = document.querySelectorAll('section, header');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
+
