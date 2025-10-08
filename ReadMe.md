@@ -9,35 +9,36 @@ This project showcases my professional experience, technical skills, and selecte
 
 ---
 
-## 🧭 About
+🧭 About
 
-This is a personal portfolio website created to highlight my journey as an IT professional.  
-**I am an IT Professional with skillset at aligning technology with business strategy and delivering scalable, secure solutions**.  
+This is a personal portfolio website created to highlight my journey as an IT professional.
+I am an IT Professional with skillset at aligning technology with business strategy and delivering scalable, secure solutions.
 
 The portfolio serves as a central hub where visitors can learn more about me, view my technical skills, explore my featured projects, and connect with me directly.
 
----
+✨ Features
 
-## ✨ Features
+✅ Fully Responsive Design – Works seamlessly across devices
 
-- ✅ **Fully Responsive Design** – Works seamlessly across devices  
-- 🎨 **Modern Oxblood Theme** – Professional look with consistent styling  
-- 🧱 **Card-Based Layout** – Clean presentation of projects and sections  
-- 🧭 **Smooth Navigation** – Quick access to all sections of the site  
-- 🌐 **Deployed on GitHub Pages** – Accessible from anywhere
+🎨 Modern Oxblood Theme – Professional look with consistent styling
 
----
+🧱 Card-Based Layout – Clean presentation of projects and sections
 
-## 🛠️ Technologies Used
+🧭 Smooth Navigation – Quick access to all sections of the site
 
-- **HTML5** – Structure and content  
-- **CSS3** – Styling and layout (custom styles, no heavy frameworks)  
-- **JavaScript** – Interactive features and smooth scroll behavior  
-- **GitHub Pages** – For hosting and deployment
+🌐 Deployed on GitHub Pages – Accessible from anywhere
 
----
+🛠️ Technologies Used
 
-## 🗂 Project Structure
+HTML5 – Structure and content
+
+CSS3 – Styling and layout (custom styles, no heavy frameworks)
+
+JavaScript – Interactive features and smooth scroll behavior
+
+GitHub Pages – For hosting and deployment
+
+🗂 Project Structure
 
 my-portfolio/
 ├── index.html # Main HTML file
@@ -46,32 +47,26 @@ my-portfolio/
 ├── assets/ # Images, icons, and other media
 └── README.md # Project documentation
 
-
-
----
-
-## 🚀 How to Run Locally
+🚀 How to Run Locally
 
 Follow these steps to view the project locally on your system:
 
-```bash
-# 1️⃣ Clone the repository
+Clone the repository
 git clone https://github.com/Yemmmyc/my-portfolio.git
 
-# 2️⃣ Navigate into the folder
+Navigate into the folder
 cd my-portfolio
 
-# 3️⃣ Open in your browser
-# On Windows
-start index.html
+Open in your browser
 
-# On macOS
-open index.html
+On Windows: start index.html
 
-# On Linux
-xdg-open index.html
+On macOS: open index.html
+
+On Linux: xdg-open index.html
+
 🌐 Live Demo
-👉 Click here to view the live site
+👉 My Portfolio
 
 👤 Author
 Oluwayemisi Okunrounmu
@@ -79,8 +74,8 @@ IT Technical Support | Cloud & DevOps Enthusiast
 Adapt at aligning technology with business strategy and delivering scalable, secure solutions.
 
 📫 Connect with me:
-📧 yemmmyc@hotmail.com;  📞 08034737155
-
+📧 yemmmyc@hotmail.com
+ | 📞 08034737155
 
 📝 License
 This project is open-source and available under the MIT License.
