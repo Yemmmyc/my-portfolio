@@ -1,73 +1,88 @@
-# 🧑‍💼 Oluwayemisi Olabanji Okunrounmu — Portfolio CV Website
+# 🧑‍💼 Oluwayemisi Olabanji Okunrounmu — 🌐 My Portfolio CV Website
 
-This is a personal **CV/Portfolio website** designed to present professional experience, education, certifications, skills, and tools in a clean and elegant layout.  
-The site is built with **HTML5** and **CSS3**, hosted on **GitHub Pages**.
+Welcome to my personal portfolio!  
+This project showcases my professional experience, technical skills, and selected projects in a clean and responsive web design.
 
-🔗 **Live Site:** [https://yemmmyc.github.io/my-portfolio](https://yemmmyc.github.io/my-portfolio)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemmmyc)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oluwayemisi-okunrounmu-13936a18)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF4088?style=for-the-badge&logo=vercel&logoColor=white)](https://yemmmyc.github.io/my-portfolio/)
+
+---
+
+## 🧭 About
+
+This is a personal portfolio website created to highlight my journey as an IT professional.  
+**I am an IT Professional with skillset at aligning technology with business strategy and delivering scalable, secure solutions**.  
+
+The portfolio serves as a central hub where visitors can learn more about me, view my technical skills, explore my featured projects, and connect with me directly.
 
 ---
 
 ## ✨ Features
 
-- 🖤 **Fixed Sidebar Navigation** — Black sidebar with gold links for easy section navigation.  
-- 🟥 **Oxblood Theme** — Distinctive page background with white content cards for a premium look.  
-- 📝 **Structured CV Sections**:
-  - Objective
-  - Highlights
-  - Professional Experience
-  - Education & Certifications
-  - Core Skills
-  - Tools & Technologies
-  - References
-- 📌 **Responsive Layout** — Works well on desktops, tablets, and mobile devices.  
-- 📈 **Modern Design** — Smooth scrolling, shadowed cards, and clear typography.
+- ✅ **Fully Responsive Design** – Works seamlessly across devices  
+- 🎨 **Modern Oxblood Theme** – Professional look with consistent styling  
+- 🧱 **Card-Based Layout** – Clean presentation of projects and sections  
+- 🧭 **Smooth Navigation** – Quick access to all sections of the site  
+- 🌐 **Deployed on GitHub Pages** – Accessible from anywhere
 
 ---
 
-## 🧰 Technologies Used
+## 🛠️ Technologies Used
 
-- **HTML5**
-- **CSS3**
-- [Font Awesome](https://fontawesome.com/) (for icons)
-- [Google Fonts](https://fonts.google.com/) (Roboto & Pacifico)
-- **GitHub Pages** (for free hosting)
+- **HTML5** – Structure and content  
+- **CSS3** – Styling and layout (custom styles, no heavy frameworks)  
+- **JavaScript** – Interactive features and smooth scroll behavior  
+- **GitHub Pages** – For hosting and deployment
 
 ---
 
-## 🚀 Deployment
+## 🗂 Project Structure
 
-The site is deployed directly from the `main` branch using **GitHub Pages**.
+my-portfolio/
+├── index.html # Main HTML file
+├── style.css # Custom CSS for styling
+├── script.js # (Optional) JS for interactivity
+├── assets/ # Images, icons, and other media
+└── README.md # Project documentation
 
-### 1. Clone the Repository
 
+
+---
+
+## 🚀 How to Run Locally
+
+Follow these steps to view the project locally on your system:
+
+```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/Yemmmyc/my-portfolio.git
+
+# 2️⃣ Navigate into the folder
 cd my-portfolio
-2. Make Changes Locally
-Edit the index.html and style.css files as needed.
 
-3. Push Changes
-git add .
-git commit -m "Update site content or styling"
-git push origin main
+# 3️⃣ Open in your browser
+# On Windows
+start index.html
 
-4. View Live Site
-Visit: https://yemmmyc.github.io/my-portfolio
+# On macOS
+open index.html
 
-📌 Future Enhancements (Optional)
-Add a Download CV (PDF) button
+# On Linux
+xdg-open index.html
+🌐 Live Demo
+👉 Click here to view the live site
 
-Include subtle animations or hover effects
+👤 Author
+Oluwayemisi Okunrounmu
+IT Technical Support | Cloud & DevOps Enthusiast
+Adapt at aligning technology with business strategy and delivering scalable, secure solutions.
 
-Add SEO meta tags and Open Graph tags for better sharing previews
+📫 Connect with me:
+📧 yemmmyc@hotmail.com;  📞 08034737155
 
-Fine-tune mobile layout spacing and typography
 
-📝 Author
-Oluwayemisi Olabanji Okunrounmu
-📞 08034737155 | 📧 yemmmyc@hotmail.com
-🏠 6 Adesina Street, Zansi Estate, Off Iwaya Rd, Onike, Sabo Yaba, Lagos State
-🔗 LinkedIn • GitHub • Portfolio
+📝 License
+This project is open-source and available under the MIT License.
 
-🪄 License
-This project is open-source and free to customize for personal use.
-
+⭐️ If you like this portfolio, don’t forget to star the repository!
