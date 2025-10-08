@@ -39,13 +39,16 @@ JavaScript – Interactive features and smooth scroll behavior
 GitHub Pages – For hosting and deployment
 
 🗂 Project Structure
+## 🗂 Project Structure
 
+```
 my-portfolio/
-├── index.html # Main HTML file
-├── style.css # Custom CSS for styling
-├── script.js # (Optional) JS for interactivity
-├── assets/ # Images, icons, and other media
-└── README.md # Project documentation
+├── index.html       # Main HTML file
+├── style.css        # Custom CSS for styling
+├── script.js        # (Optional) JS for interactivity
+├── assets/          # Images, icons, and other media
+└── README.md        # Project documentation
+```
 
 🚀 How to Run Locally
 
