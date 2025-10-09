@@ -1,7 +1,11 @@
 # 🧑‍💼 Oluwayemisi Olabanji Okunrounmu — 🌐 My Portfolio CV Website
 
-Welcome to my personal portfolio!  
-This project showcases my professional experience, technical skills, and selected projects in a clean and responsive web design.
+Welcome to my personal portfolio! 
+
+🚀 **Deployed automatically via GitHub Actions to Azure Static Web Apps**
+
+TThis project showcases my personal portfolio — a simple and responsive website hosted on **Azure Static Web Apps** with continuous deployment (CI/CD) directly from GitHub.  
+Every time a change is pushed to the `main` branch, the site is automatically rebuilt and redeployed to Azure.
 
 [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemmmyc)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oluwayemisi-okunrounmu-13936a18)
@@ -154,4 +158,4 @@ This project is open-source and available under the MIT License.
 - Tables and icons aligned  
 - Section dividers neatly spaced  
 
-Would you like me to show you how to **push this new README to GitHub** now (without overwriting your other files)?
+
