@@ -1,3 +1,5 @@
+<p align="left">
+
 # 🧑‍💼 Oluwayemisi Olabanji Okunrounmu — 🌐 My Portfolio CV Website
 
 Welcome to my personal portfolio! 
@@ -42,6 +44,18 @@ The portfolio serves as a central hub where visitors can:
 - **CSS3** – Styling and layout  
 - **JavaScript** – Interactivity and smooth scrolling  
 - **GitHub & Azure** – Hosting and CI/CD deployment  
+
+## 🧩 Tools Used
+
+- **Visual Studio Code** — Primary editor used for development and deployment.
+- **Azure Static Web Apps (VS Code extension)** — Deploy directly from VS Code.
+- **Azure Portal** — Manage the Static Web App and view deployment history.
+- **Git** — Local version control.
+- **GitHub** — Remote repository hosting.
+- **GitHub Actions** — CI/CD workflow that automatically deploys on push.
+- **PowerShell / Terminal** — Run local git commands on Windows.
+- **Chrome / Edge / Firefox** — Browser testing and inspection (DevTools).
+- **(Optional) Azure CLI** — For manual Azure operations if needed.
 
 ---
 
@@ -157,5 +171,6 @@ This project is open-source and available under the MIT License.
 - Code blocks highlighted  
 - Tables and icons aligned  
 - Section dividers neatly spaced  
+</p>
 
 
