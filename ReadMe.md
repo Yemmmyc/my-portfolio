@@ -40,7 +40,7 @@ The portfolio serves as a central hub where visitors can:
 ---
 
 ## 🗂 Project Structure
-...
+```
 my-portfolio/
 ├── index.html # Main HTML file
 ├── styles.css # Custom CSS for styling
@@ -48,7 +48,7 @@ my-portfolio/
 ├── .github/
 │ └── workflows/ # GitHub Actions for Azure
 └── README.md # Documentation
-...
+```
 
 ---
 
