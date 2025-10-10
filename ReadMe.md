@@ -1,17 +1,12 @@
-<p align="left">
-
 # 🧑‍💼 Oluwayemisi Olabanji Okunrounmu — 🌐 My Portfolio CV Website
 
-Welcome to my personal portfolio! 
-
+Welcome to my personal portfolio!  
 🚀 **Deployed automatically via GitHub Actions to Azure Static Web Apps**
 
-TThis project showcases my personal portfolio — a simple and responsive website hosted on **Azure Static Web Apps** with continuous deployment (CI/CD) directly from GitHub.  
-Every time a change is pushed to the `main` branch, the site is automatically rebuilt and redeployed to Azure.
+This project showcases my personal portfolio — a simple and responsive website hosted on **Azure Static Web Apps** with **continuous deployment (CI/CD)** directly from GitHub.  
+Every time a change is pushed to the main branch, the site is automatically rebuilt and redeployed to Azure.
 
-[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemmmyc)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oluwayemisi-okunrounmu-13936a18)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF4088?style=for-the-badge&logo=vercel&logoColor=white)](https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/)
+[🔗 GitHub Repository](https://github.com/Yemmmyc/my-portfolio) • [🌍 Live Portfolio](https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/) • [💼 LinkedIn](#)
 
 ---
 
@@ -21,6 +16,7 @@ This is a personal portfolio website created to highlight my journey as an IT pr
 I am an **IT Technical Support specialist** with a proven ability to align technology with business strategy and deliver scalable, secure solutions.
 
 The portfolio serves as a central hub where visitors can:
+
 - Learn more about me  
 - View my technical skills  
 - Explore my featured projects  
@@ -34,7 +30,7 @@ The portfolio serves as a central hub where visitors can:
 🎨 **Modern Oxblood Theme** – Professional look with consistent styling  
 🧱 **Card-Based Layout** – Clean presentation of projects and sections  
 🧭 **Smooth Navigation** – Quick access to all sections of the site  
-🌐 **Deployed on Azure Static Web Apps and GitHub Pages**
+☁️ **Azure-Hosted** – Deployed via GitHub Actions on Azure Static Web Apps  
 
 ---
 
@@ -45,35 +41,39 @@ The portfolio serves as a central hub where visitors can:
 - **JavaScript** – Interactivity and smooth scrolling  
 - **GitHub & Azure** – Hosting and CI/CD deployment  
 
+---
+
 ## 🧩 Tools Used
 
-- **Visual Studio Code** — Primary editor used for development and deployment.
-- **Azure Static Web Apps (VS Code extension)** — Deploy directly from VS Code.
-- **Azure Portal** — Manage the Static Web App and view deployment history.
-- **Git** — Local version control.
-- **GitHub** — Remote repository hosting.
-- **GitHub Actions** — CI/CD workflow that automatically deploys on push.
-- **PowerShell / Terminal** — Run local git commands on Windows.
-- **Chrome / Edge / Firefox** — Browser testing and inspection (DevTools).
-- **(Optional) Azure CLI** — For manual Azure operations if needed.
+- 🧑‍💻 **Visual Studio Code** — Development and deployment  
+- ☁️ **Azure Static Web Apps (VS Code extension)** — Deploy directly from VS Code  
+- 🌐 **Azure Portal** — Manage Static Web App and view deployment history  
+- 🔁 **Git & GitHub** — Version control and remote hosting  
+- ⚙️ **GitHub Actions** — CI/CD automation for continuous deployment  
+- 💻 **PowerShell / Terminal** — Running local git commands  
+- 🧭 **Chrome / Edge / Firefox** — Browser testing and debugging  
+- 🪣 **(Optional) Azure CLI** — Manual Azure operations  
 
 ---
 
 ## 🗂 Project Structure
 
-```bash
 my-portfolio/
-├── index.html        # Main HTML file
-├── styles.css        # Custom CSS for styling
-├── assets/           # (Optional) images, icons, media
+├── index.html # Main HTML file
+├── styles.css # Custom CSS for styling
+├── assets/ # (Optional) images, icons, media
 ├── .github/
-│   └── workflows/    # GitHub Actions for Azure
-└── README.md         # Documentation
+│ └── workflows/ # GitHub Actions for Azure
+└── README.md # Documentation
 
-🚀 How to Run Locally
+
+---
+
+## 🚀 How to Run Locally
 
 Follow these steps to view the project locally:
 
+```bash
 # Clone the repository
 git clone https://github.com/Yemmmyc/my-portfolio.git
 
@@ -107,7 +107,7 @@ App location	/
 API location	(leave blank)
 Output location	/
 
-Azure will automatically create the GitHub Actions workflow:
+Azure automatically generates a workflow file:
 .github/workflows/azure-static-web-apps.yml
 
 🔁 Step 3 — Automatic CI/CD Deployment
@@ -120,25 +120,17 @@ GitHub → Actions tab
 
 Azure Portal → Deployments
 
-🎨 CSS Not Applying? (Fix Guide)
+🎨 CSS Not Applying? (Quick Fix)
 
 If your page loads but the styles don’t apply:
 
-Check the file reference in your HTML:
+Check your HTML link reference:
 
 <link rel="stylesheet" href="styles.css">
-
-
-Ensure the file is actually named styles.css.
-
-Then run:
 
 git add .
 git commit -m "Fix CSS path"
 git push
-
-
-Azure will automatically redeploy the updated version.
 
 🌍 Live Deployment
 
@@ -153,24 +145,12 @@ https://github.com/Yemmmyc/my-portfolio
 Oluwayemisi Olabanji Okunrounmu
 IT Technical Support | Cloud & DevOps Enthusiast
 
-📧 yemmmyc@hotmail.com
+📧 Email: yemmmyc@hotmail.com
 
-📞 08034737155
+📞 Phone: 08034737155
 
 📝 License
 
 This project is open-source and available under the MIT License.
 
 ⭐️ If you like this project, don’t forget to star the repository!
-
-
----
-
-✅ This version will render **exactly like a professional GitHub README**, with:
-- Tree view showing properly  
-- Code blocks highlighted  
-- Tables and icons aligned  
-- Section dividers neatly spaced  
-</p>
-
-
