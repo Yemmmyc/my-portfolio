@@ -6,7 +6,7 @@ Welcome to my personal portfolio!
 This project showcases my personal portfolio — a simple and responsive website hosted on **Azure Static Web Apps** with **continuous deployment (CI/CD)** directly from GitHub.  
 Every time a change is pushed to the main branch, the site is automatically rebuilt and redeployed to Azure.
 
-[🔗 GitHub Repository](https://github.com/Yemmmyc/my-portfolio) • [🌍 Live Portfolio](https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/) • [💼 LinkedIn](#)
+[🔗 **GitHub Repository**](https://github.com/Yemmmyc/my-portfolio) • [🌍 **Live Portfolio**](https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/) • [💼 **LinkedIn**](#)
 
 ---
 
@@ -58,14 +58,15 @@ The portfolio serves as a central hub where visitors can:
 
 ## 🗂 Project Structure
 
+```plaintext
 my-portfolio/
-├── index.html # Main HTML file
-├── styles.css # Custom CSS for styling
-├── assets/ # (Optional) images, icons, media
+├── index.html          # Main HTML file
+├── styles.css          # Custom CSS for styling
+├── assets/             # (Optional) images, icons, media
 ├── .github/
-│ └── workflows/ # GitHub Actions for Azure
-└── README.md # Documentation
-
+│   └── workflows/      # GitHub Actions for Azure
+└── README.md           # Documentation
+```
 
 ---
 
@@ -84,73 +85,86 @@ cd my-portfolio
 start index.html     # Windows
 open index.html      # macOS
 xdg-open index.html  # Linux
+```
 
-☁️ Azure Static Web App Deployment (VS Code Method)
+---
+
+## ☁️ Azure Static Web App Deployment (VS Code Method)
 
 This section documents how the portfolio was deployed from VS Code to Azure Static Web Apps using GitHub Actions.
 
-🪴 Step 1 — Setup
+### 🪴 Step 1 — Setup
 
-Open your project in VS Code
+1. Open your project in **VS Code**  
+2. Install the **Azure Static Web Apps** extension  
+3. Sign in to your **Azure account**  
+4. Click the Azure icon → **Static Web Apps** → **+ Create Static Web App**  
 
-Install the Azure Static Web Apps extension
+### ⚙️ Step 2 — Configuration
 
-Sign in to your Azure account
+| Setting | Value |
+|----------|--------|
+| **App Name** | my-portfolio |
+| **Framework** | Custom |
+| **App location** | / |
+| **API location** | *(leave blank)* |
+| **Output location** | / |
 
-Click the Azure icon → Static Web Apps → + Create Static Web App
+Azure automatically generates a workflow file:  
+`.github/workflows/azure-static-web-apps.yml`
 
-⚙️ Step 2 — Configuration
-Setting	Value
-App Name	my-portfolio
-Framework	Custom
-App location	/
-API location	(leave blank)
-Output location	/
+### 🔁 Step 3 — Automatic CI/CD Deployment
 
-Azure automatically generates a workflow file:
-.github/workflows/azure-static-web-apps.yml
+Every time you push to the **main** branch, Azure automatically builds and redeploys your site.
 
-🔁 Step 3 — Automatic CI/CD Deployment
+Monitor deployment logs in:  
+- **GitHub → Actions tab**  
+- **Azure Portal → Deployments**  
 
-Every time you push to the main branch, Azure automatically builds and redeploys your site.
+---
 
-Monitor deployment logs in:
+## 🎨 CSS Not Applying? (Quick Fix)
 
-GitHub → Actions tab
+If your page loads but the styles don’t apply, check your HTML reference:
 
-Azure Portal → Deployments
-
-🎨 CSS Not Applying? (Quick Fix)
-
-If your page loads but the styles don’t apply:
-
-Check your HTML link reference:
-
+```html
 <link rel="stylesheet" href="styles.css">
+```
 
+Then commit and push again:
+
+```bash
 git add .
 git commit -m "Fix CSS path"
 git push
+```
 
-🌍 Live Deployment
+Azure will automatically redeploy the updated version.
 
-✅ Azure URL:
-https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/
+---
 
-✅ GitHub Repository:
-https://github.com/Yemmmyc/my-portfolio
+## 🌍 Live Deployment
 
-👤 Author
+✅ **Azure URL:**  
+[https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/](https://ashy-cliff-0b25d7a10.2.azurestaticapps.net/)
 
-Oluwayemisi Olabanji Okunrounmu
-IT Technical Support | Cloud & DevOps Enthusiast
+✅ **GitHub Repository:**  
+[https://github.com/Yemmmyc/my-portfolio](https://github.com/Yemmmyc/my-portfolio)
 
-📧 Email: yemmmyc@hotmail.com
+---
 
-📞 Phone: 08034737155
+## 👤 Author
 
-📝 License
+**Oluwayemisi Olabanji Okunrounmu**  
+IT Technical Support | Cloud & DevOps Enthusiast  
 
-This project is open-source and available under the MIT License.
+📧 **Email:** yemmmyc@hotmail.com  
+📞 **Phone:** 08034737155  
+
+---
+
+## 📝 License
+
+This project is open-source and available under the **MIT License**.
 
 ⭐️ If you like this project, don’t forget to star the repository!
